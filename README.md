@@ -7,9 +7,13 @@
 
 > A REST API to check the current weather.
 
-> https://goweather.herokuapp.com/weather/Curitiba<br />
-https://goweather.herokuapp.com/weather/{city}
+> https://weather-restful.herokuapp.com/weather/Singapore
+https://weather-restful.herokuapp.com/weather/{city}
 
+## Install
+```sh
+dep ensure
+```
 ## Build
 ```sh
 go build
@@ -25,25 +29,30 @@ curl http://localhost:3000/weather/{city}
 ## Example
 #### Request
 ```sh
-curl http://localhost:3000/weather/Curitiba
+curl http://localhost:3000/weather/Singapore
 ```
 #### Response
 ```json
-{  
-   "temperature":"29 °C",
-   "wind":"20 km/h",
-   "description":"Partly cloudy",
-   "forecast":[  
-      {  
-         "day":1,
-         "temperature":"27 °C",
-         "wind":"12 km/h"
-      },
-      {  
-         "day":2,
-         "temperature":"22 °C",
-         "wind":"8 km/h"
-      }
-   ]
+{
+  "temperature": "+28 °C",
+  "wind": "11 km/h",
+  "description": "Partly cloudy",
+  "forecast": [
+    {
+      "day": "1",
+      "temperature": "+30 °C",
+      "wind": "13 km/h"
+    },
+    {
+      "day": "2",
+      "temperature": "32 °C",
+      "wind": "5 km/h"
+    },
+    {
+      "day": "3",
+      "temperature": " °C",
+      "wind": "11 km/h"
+    }
+  ]
 }
 ```

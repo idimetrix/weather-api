@@ -2,53 +2,91 @@
 
 
 [[projects]]
+  digest = "1:5a45c1f8dc56995c5db633c216152649f3b54d387b8a6be7c497b2bfa0889eec"
   name = "github.com/PuerkitoBio/goquery"
   packages = ["."]
-  revision = "e1271ee34c6a305e38566ecd27ae374944907ee9"
-  version = "v1.1.0"
+  pruneopts = "UT"
+  revision = "f41c56001f39e3288c2b214079e5cab9707f9b99"
+  version = "v1.6.1"
 
 [[projects]]
-  branch = "master"
+  digest = "1:4541494abfa96c333e22c3ecef56724ba74de46772581dc2d106e9cbaf0640c9"
   name = "github.com/andybalholm/cascadia"
   packages = ["."]
-  revision = "349dd0209470eabd9514242c688c403c0926d266"
+  pruneopts = "UT"
+  revision = "903109d295d56a99095f2cfab0c2ca8d4b22f648"
+  version = "v1.2.0"
 
 [[projects]]
+  digest = "1:a571648c5f1a3f20fa405d1cf924b941c5bb236ea6d0565a63c0994e38dd8f82"
   name = "github.com/caarlos0/env"
   packages = ["."]
-  revision = "d29d8d23e95ae07cc6fafc53154f8456820ad9f2"
-  version = "v3.1"
+  pruneopts = "UT"
+  revision = "518fcfb943252f77846f92ce5794086d9cb4a1b5"
+  version = "v3.5.0"
 
 [[projects]]
-  name = "github.com/gorilla/context"
+  digest = "1:2b64581854ae098705f77c94def899a7ecc598042b256ac66b496299d40f6603"
+  name = "github.com/felixge/httpsnoop"
   packages = ["."]
-  revision = "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
-  version = "v1.1"
+  pruneopts = "UT"
+  revision = "42c30f944879059639bcf7b2ca4aba06f4a83198"
+  version = "v1.0.2"
 
 [[projects]]
+  digest = "1:9ff256c9dfa28d8fe056cce6babbd529862b0c340710c62881b80368b5bd5bbf"
   name = "github.com/gorilla/handlers"
   packages = ["."]
-  revision = "90663712d74cb411cbef281bc1e08c19d1a76145"
-  version = "v1.3.0"
+  pruneopts = "UT"
+  revision = "d453effd20e6817a8acfd9d278dadd21371da0ba"
+  version = "v1.5.1"
 
 [[projects]]
+  digest = "1:6078383dbb7405bfa3ce16957f37564e3b716afa29b6eb45ffdb6674624d1e0d"
   name = "github.com/gorilla/mux"
   packages = ["."]
-  revision = "24fca303ac6da784b9e8269f724ddeb0b2eea5e7"
-  version = "v1.5.0"
+  pruneopts = "UT"
+  revision = "98cb6bf42e086f6af920b965c38cacc07402d51b"
+  version = "v1.8.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:859b21224a237cdcb1353fa1a66e2346b074bb4f9e3440ac4fa8e7a4433e8cfa"
+  name = "github.com/idimetrix/weather-api"
+  packages = [
+    "config",
+    "controller",
+    "controller/v2",
+    "model",
+    "parser",
+  ]
+  pruneopts = "UT"
+  revision = "53acf7654cbce0c053628b805c61c988bc9f409f"
+
+[[projects]]
+  branch = "master"
+  digest = "1:e2d89aeaa1de743782b58aef66cf2490e4c9abe27c7a362d2d7ec590d5573b7c"
   name = "golang.org/x/net"
   packages = [
     "html",
-    "html/atom"
+    "html/atom",
   ]
-  revision = "7b572d500b0702f1ea30a47083ce2e1e5c61edba"
+  pruneopts = "UT"
+  revision = "4163338589ed626ba11276b63facaef1f55349d4"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "bd2a13ca698b90dd6b7169bb6ce86bb1b4d4b0cecce349cee2393727153790ab"
+  input-imports = [
+    "github.com/PuerkitoBio/goquery",
+    "github.com/caarlos0/env",
+    "github.com/gorilla/handlers",
+    "github.com/gorilla/mux",
+    "github.com/idimetrix/weather-api/config",
+    "github.com/idimetrix/weather-api/controller",
+    "github.com/idimetrix/weather-api/controller/v2",
+    "github.com/idimetrix/weather-api/model",
+    "github.com/idimetrix/weather-api/parser",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
